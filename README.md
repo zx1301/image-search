@@ -1,5 +1,5 @@
 # Image Search
-React Application that uses Pixabay API to search and view images their tags
+React Application that uses Pixabay API to search and view images and their tags
 
 # Getting Started with Create React App
 
