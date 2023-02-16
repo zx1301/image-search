@@ -1,3 +1,6 @@
+# Image Search
+React Application that uses Pixabay API to search and view images their tags
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
