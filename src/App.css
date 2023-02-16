@@ -95,6 +95,7 @@ h1 {
   padding: 10px;
   position: relative;
   right: 670px;
+  cursor: pointer;
 }
 
 .left {

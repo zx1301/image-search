@@ -14,13 +14,17 @@ const ImageView = () => {
     }
   }, []);
 
+  const handleRedirect = () => {
+    navigate('/');
+  };
+
   const image = location.state;
 
   const tags = image.tags.split(', ');
   return(
       <>
       <div className='app'>
-        <i class="arrow left"></i>
+        <i class="arrow left" onClick={handleRedirect}></i>
         <div>
           <img src={image.largeImageURL} alt={image.tags}></img>
         </div>
