@@ -20,12 +20,13 @@ const ImageView = () => {
   return(
       <>
       <div className='app'>
+        <i class="arrow left"></i>
         <div>
           <img src={image.largeImageURL} alt={image.tags}></img>
         </div>
         <div>
           {tags.map((tag) => (
-            <p>{tag}</p>
+            <p className='tag'>{tag}</p>
           ))}
         </div>
       </div>

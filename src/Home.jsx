@@ -24,7 +24,7 @@ const Home = () => {
   }
 
   return(
-    <div className ="App">
+    <div className ="app">
       <h1>Image Search</h1>
       <div className="search">
         <input
