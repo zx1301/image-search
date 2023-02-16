@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import './App.css'
-import SearchIcon from './searchIcon.png'
+import './App.css';
+import SearchIcon from './searchIcon.png';
+import ImageCard from './ImageCard';
 
 const Home = () => {
   const [images, setImages] = useState([]);
@@ -37,7 +38,8 @@ const Home = () => {
         images?.length > 0 && (
           <div className="container">
             {images.map((img) => (
-              <p>{img.tags}</p>
+
+              <ImageCard image={img}/>
             ))}
           </div>
         )
