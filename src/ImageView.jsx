@@ -1,8 +1,35 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const ImageView = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // redirect user back to home page if they try 
+  // to access without clicking on image
+  useEffect(() => {
+    if (location.state == null) {
+      navigate('/');
+    }
+  }, []);
+
+  const image = location.state;
+
+  const tags = image.tags.split(', ');
   return(
-    <p>imageView</p>
+      <>
+      <div className='app'>
+        <div>
+          <img src={image.largeImageURL} alt={image.tags}></img>
+        </div>
+        <div>
+          {tags.map((tag) => (
+            <p>{tag}</p>
+          ))}
+        </div>
+      </div>
+      </>
   );
 };
 
